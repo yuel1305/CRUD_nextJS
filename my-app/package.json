@@ -10,6 +10,8 @@
     "json-server": "json-server --watch data/todos.json --port 3001"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.40.1",
+    "@tanstack/react-query-devtools": "^5.40.1",
     "axios": "^1.7.2",
     "next": "14.2.3",
     "react": "^18",

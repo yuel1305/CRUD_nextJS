@@ -1,20 +1,17 @@
-import { useEffect, useState } from "react";
-import { getAllTodos } from "../../api";
-import AddTask from "./components/AddTask";
-import TodoList from "./components/TodoList";
-import { ITask } from "../../types/tasks";
-import Task from "./components/Task";
+import { getAllOrder } from "../../api";
+import AddOrder from "./components/AddOrder";
+import OrderList from "./components/OrderList";
 
 export default async function Home() {
-  const tasks = await getAllTodos();
+  const orders = await getAllOrder();
 
   return (
     <main className="max-w-4xl mx-auto mt-4">
       <div className="flex flex-col gap-4 my-5 text-center">
         <h1 className="text-2xl font-bold">CRUD App</h1>
-        <AddTask />
+        <AddOrder />
       </div>
-      <TodoList tasks={tasks} />
+      <OrderList orders={orders} />
     </main>
   );
 }
