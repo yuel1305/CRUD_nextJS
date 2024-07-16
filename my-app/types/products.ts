@@ -4,4 +4,5 @@ export interface IProduct {
     brand: string;
     size: number;
     price: number;
+    image: string
 }

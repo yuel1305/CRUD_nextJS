@@ -1,8 +1,16 @@
 import { IProduct } from "./products";
 export interface IOrder {
+  orderModel: {
     id: number;
-    product: IProduct;
     name: string;
     address: string;
     phone: string;
+  };
+  //   orderProducts: [
+  //     {
+  //       orderId: number;
+  //       productId: number;
+  //     }
+  //   ];
+  productIds: number[];
 }
